@@ -137,6 +137,7 @@ public class Controller {
                     raster.clear();
                     linePoints = new ArrayList<>();
                     polyPoints = new ArrayList<>();
+                    regularPoly = null;
                 }
 
             }
