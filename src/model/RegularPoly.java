@@ -1,12 +1,14 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class RegularPoly{
-    private int x, y, x2, y2, apex;
-    private double degree;
+    private final int x;
+    private final int y;
+    private int x2;
+    private int y2;
+    private int apex;
     private List<Point> points = new ArrayList<>();
 
     public RegularPoly(int x, int y, int x2, int y2, int apex) {
@@ -60,10 +62,10 @@ public class RegularPoly{
     private void calculate() {
         this.points = new ArrayList<>();
         this.points.add(new Point(this.x2, this.y2));
-        this.degree = Math.toRadians(360.0 / this.apex);
+        double degree = Math.toRadians(360.0 / this.apex);
         for (int i = 1; i < this.apex; i++) {
-            double newX = this.x + (Math.cos(this.degree * i) * (this.x2 - this.x) + Math.sin(this.degree * i) * (this.y2 - this.y));
-            double newY = this.y + (- Math.sin(this.degree * i) * (this.x2 - this.x) + Math.cos(this.degree * i) * (this.y2 - this.y));
+            double newX = this.x + (Math.cos(degree * i) * (this.x2 - this.x) + Math.sin(degree * i) * (this.y2 - this.y));
+            double newY = this.y + (- Math.sin(degree * i) * (this.x2 - this.x) + Math.cos(degree * i) * (this.y2 - this.y));
             this.points.add(new Point((int) Math.round(newX), (int) Math.round(newY)));
         }
     }

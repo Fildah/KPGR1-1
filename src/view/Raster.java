@@ -10,11 +10,11 @@ public class Raster extends JPanel {
 
     private final BufferedImage img; // objekt pro zápis pixelů
     private final Graphics g; // objekt nad kterým jsou k dispozici grafické funkce
-    private final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    private final Dimension screenSize = new Dimension(1000, 800);
     private static final int FPS = 1000 / 30;
 
     public Raster() {
-        setPreferredSize(new Dimension(screenSize.width / 2, screenSize.height / 2));
+        setPreferredSize(screenSize);
         // inicializace image, nastavení rozměrů (nastavení typu - pro nás nedůležité)
         img = new BufferedImage(screenSize.width, screenSize.height, BufferedImage.TYPE_INT_RGB);
         g = img.getGraphics();

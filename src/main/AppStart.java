@@ -5,7 +5,7 @@ import view.PGRFWindow;
 
 import javax.swing.*;
 
-public class AppStart {
+class AppStart {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {

@@ -19,7 +19,7 @@ public class Controller {
     private RegularPoly regularPoly;
     private int origX, origY;
     private int lastDraw;
-    private List<Point> drawSize;
+    private final List<Point> drawSize;
 
     public Controller(Raster raster) {
         this.renderer = new Renderer(raster);
@@ -28,9 +28,9 @@ public class Controller {
         regularPoly = null;
         initListeners(raster);
         drawSize = new ArrayList<>();
-        drawSize.add(new Point(0, raster.getScreenSize().height));
-        drawSize.add(new Point(raster.getScreenSize().width, raster.getScreenSize().height));
-        drawSize.add(new Point(raster.getScreenSize().width, 0));
+        drawSize.add(new Point(0, raster.getScreenSize().height - 1));
+        drawSize.add(new Point(raster.getScreenSize().width - 1, raster.getScreenSize().height - 1));
+        drawSize.add(new Point(raster.getScreenSize().width - 1, 0));
         drawSize.add(new Point(0, 0));
     }
 
