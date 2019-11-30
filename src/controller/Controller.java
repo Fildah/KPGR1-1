@@ -28,10 +28,10 @@ public class Controller {
         regularPoly = null;
         initListeners(raster);
         drawSize = new ArrayList<>();
-        drawSize.add(new Point(0, 0));
         drawSize.add(new Point(0, raster.getScreenSize().height));
-        drawSize.add(new Point(raster.getScreenSize().width, 0));
         drawSize.add(new Point(raster.getScreenSize().width, raster.getScreenSize().height));
+        drawSize.add(new Point(raster.getScreenSize().width, 0));
+        drawSize.add(new Point(0, 0));
     }
 
     private void initListeners(Raster raster) {
@@ -172,7 +172,7 @@ public class Controller {
             List<Point> cuted = cutPoly(polyPoints, regularPoly.getPoints());
             if (cuted.size() > 2) {
                 renderer.scanLine(cuted, Color.YELLOW.getRGB());
-                renderer.drawPolygon(cuted, Color.YELLOW.getRGB()+150);
+                renderer.drawPolygon(cuted, Color.ORANGE.getRGB()+150);
             }
         }
     }
@@ -216,9 +216,6 @@ public class Controller {
                 break;
             }
             edge1 = edge2;
-        }
-        if (in.size() == 0) {
-            return cliped;
         }
         return in;
     }

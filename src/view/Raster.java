@@ -49,6 +49,11 @@ public class Raster extends JPanel {
         img.setRGB(x, y, color);
     }
 
+    public void drawPixelAA(int x, int y, Color color, float alfa) {
+        Color newColor = new Color(color.getRed() / 255.0F, color.getGreen() / 255.0F, color.getBlue() / 255.0F, alfa);
+        img.setRGB(x, y, newColor.getRGB());
+    }
+
     public int getPixelColor(int x, int y) {
         return img.getRGB(x, y);
     }

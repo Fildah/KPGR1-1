@@ -4,6 +4,7 @@ import model.Line;
 import model.Point;
 import view.Raster;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -187,6 +188,30 @@ public class Renderer {
                     drawLine(pruseciky.get(i), y, pruseciky.get(i + 1), y, color);
                 }
             }
+        }
+    }
+
+    public void drawLineAA(int x1, int y1, int x2, int y2, Color color) {
+        int x = x1;
+        int y = y1;
+        int dx = x2 - x1;
+        int dy = y2 - y1;
+
+        int p = -dx;
+
+        raster.drawPixel(x, y1, color.getRGB());
+
+        while (x < x2) {
+            p = p + dy;
+            x += 1;
+            if (p >= 0) {
+                p = p - dx;
+                y += 1;
+            }
+            float w = ((float) -p / (float) dx);
+            System.out.println(w);
+            raster.drawPixelAA(x, y, color, w);
+            raster.drawPixelAA(x, y + 1, color, 1 - w);
         }
     }
 }
