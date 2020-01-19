@@ -1,11 +1,11 @@
-Pouívání:
+PouÅ¾Ã­vÃ¡nÃ­:
 
-Click levého tlaèíka se stisknutım tlaèítkem shitf a následnı drag: vytváøí standardní èáru
-Click levého tlaèíka se stisknutım tlaèítkem control a následnı drag: vytváøí èáru kreslenou pomocí DDA
-Click levého tlaèítka, nebo Drag s stiknutım levım tlaèítkem: vytváøí uzavøenı n-úhelník
-Click pravého tlaèítka a následnı drag: vytváøí pravidelnı n-úhelník
-Click pravého tlaèítka se stisknutım tlaèítkem control: vyplní pozadí pomocí semínkového algoritmu na základì pozadí
-Click pravého tlaèítka se stisknutım tlaèítkem shift: vyplní pozadí pomocí semínkového algoritmu na základì oranièení
-Stitsk tlaèítka delete: smae všechny objekty a vyèistí plátno
+Click levÃ©ho tlaÄÃ­ka se stisknutÃ½m tlaÄÃ­tkem shitf a nÃ¡slednÃ½ drag: vytvÃ¡Å™Ã­ standardnÃ­ ÄÃ¡ru
+Click levÃ©ho tlaÄÃ­ka se stisknutÃ½m tlaÄÃ­tkem control a nÃ¡slednÃ½ drag: vytvÃ¡Å™Ã­ ÄÃ¡ru kreslenou pomocÃ­ DDA
+Click levÃ©ho tlaÄÃ­tka, nebo Drag s stiknutÃ½m levÃ½m tlaÄÃ­tkem: vytvÃ¡Å™Ã­ uzavÅ™enÃ½ n-ÃºhelnÃ­k
+Click pravÃ©ho tlaÄÃ­tka a nÃ¡slednÃ½ drag: vytvÃ¡Å™Ã­ pravidelnÃ½ n-ÃºhelnÃ­k
+Click pravÃ©ho tlaÄÃ­tka se stisknutÃ½m tlaÄÃ­tkem control: vyplnÃ­ pozadÃ­ pomocÃ­ semÃ­nkovÃ©ho algoritmu na zÃ¡kladÄ› pozadÃ­
+Click pravÃ©ho tlaÄÃ­tka se stisknutÃ½m tlaÄÃ­tkem shift: vyplnÃ­ pozadÃ­ pomocÃ­ semÃ­nkovÃ©ho algoritmu na zÃ¡kladÄ› oraniÄenÃ­
+Stitsk tlaÄÃ­tka delete: smaÅ¾e vÅ¡echny objekty a vyÄistÃ­ plÃ¡tno
 
-Pravelnı n-úhelník øee uzavøenı n-úhelník
+PravelnÃ½ n-ÃºhelnÃ­k Å™eÅ¾e uzavÅ™enÃ½ n-ÃºhelnÃ­k
